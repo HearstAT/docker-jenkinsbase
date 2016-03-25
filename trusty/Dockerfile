@@ -8,7 +8,7 @@ ENV JENKINS_HOME /var/lib/jenkins
 RUN apt-get update &&\
     apt-get install -y openssh-server \
     bash \
-    openjdk-8-jdk &&\
+    openjdk-7-jdk &&\
     apt-get clean -y && rm -rf /var/lib/apt/lists/* &&\
     sed -i 's|session    required     pam_loginuid.so|session    optional     pam_loginuid.so|g' /etc/pam.d/sshd &&\
     mkdir -p /var/run/sshd

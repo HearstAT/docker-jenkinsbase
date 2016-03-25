@@ -14,7 +14,8 @@ RUN apt-get update &&\
     mkdir -p /var/run/sshd
 
 # Add user and group jenkins to the image
-RUN useradd -m -p jenkins -d $JENKINS_HOME -s /bin/bash -U jenkins
+RUN useradd -m -p jenkins -d $JENKINS_HOME -s /bin/bash -U jenkins && \
+    echo "jenkins:jenkins" | chpasswd
 
 # Volumes
 VOLUME /var/lib/jenkins
