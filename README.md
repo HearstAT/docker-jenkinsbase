@@ -3,12 +3,19 @@ hearstat/jenkins-slave-base
 
 Container to be utilized with the Jenkins Docker Plugin
 
-## Build Info
+## Latest Build Info
 * Base Image: ubuntu:xenial
+* openJDK: 8
+
+## Trusty Build Info
+* Base Image: ubuntu:trusty
 * openJDK: 8
 
 ## Usage
 
+```
+FROM jenkins-slave-base:xenial
+```
 
 ## Building
 
