@@ -9,7 +9,7 @@ Container to be utilized with the Jenkins Docker Plugin
 
 ## Trusty Build Info
 * Base Image: ubuntu:trusty
-* openJDK: 8
+* openJDK: 7
 
 ## Usage
 
