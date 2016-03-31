@@ -7,6 +7,7 @@ ENV JENKINS_HOME /var/lib/jenkins
 
 RUN apt-get update &&\
     apt-get install -y openssh-server \
+    git \
     bash \
     openjdk-7-jdk &&\
     apt-get clean -y && rm -rf /var/lib/apt/lists/* &&\
